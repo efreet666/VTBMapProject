@@ -1,27 +1,17 @@
 import UIKit
 import YandexMapsMobile
 import TinyConstraints
+import SnapKit
 
-class ViewController: UIViewController, YMKUserLocationObjectListener {
+final class MainMapViewController: UIViewController, YMKUserLocationObjectListener {
 
+	// MARK: - variables
 	let mapView = YMKMapView()
 	
-	fileprivate func setUserLocation() {
-		mapView.mapWindow.map.isRotateGesturesEnabled = false
-		mapView.mapWindow.map.move(with:
-									YMKCameraPosition(target: YMKPoint(latitude: 0, longitude: 0), zoom: 14, azimuth: 0, tilt: 0))
-		
-		let scale = UIScreen.main.scale
-		let mapKit = YMKMapKit.sharedInstance()
-		let userLocationLayer = mapKit.createUserLocationLayer(with: mapView.mapWindow)
-		
-		userLocationLayer.setVisibleWithOn(true)
-		userLocationLayer.isHeadingEnabled = true
-//        userLocationLayer.setAnchorWithAnchorNormal(
-//            CGPoint(x: 0.5 * mapView.frame.size.width * scale, y: 0.5 * mapView.frame.size.height * scale),
-//            anchorCourse: CGPoint(x: 0.5 * mapView.frame.size.width * scale, y: 0.83 * mapView.frame.size.height * scale))
-		userLocationLayer.setObjectListenerWith(self)
-	}
+	// MARK: - View
+	private let customView = SegmentContollView()
+	
+
 	
 	override func viewDidLoad() {
 		super.viewDidLoad()
@@ -42,8 +32,26 @@ class ViewController: UIViewController, YMKUserLocationObjectListener {
 		setupPlaceData()
 		
 		setUserLocation()
+		setupLayout()
 	}
 
+	private func setupLayout() {
+		
+		self.view.addSubview(customView)
+		
+		configureLayout()
+	}
+	
+	func configureLayout() {
+		self.customView.snp.makeConstraints { make in
+			make.top.equalTo(60)
+			make.leading.equalToSuperview()
+			make.trailing.equalToSuperview()
+			make.height.equalTo(32)
+		}
+	}
+	
+	
 	private func setupPlaceData() {
 		let placeData: [BankDepartmentModel]? = getPlaceData()
 		guard let placeData else { return }
@@ -54,6 +62,23 @@ class ViewController: UIViewController, YMKUserLocationObjectListener {
 	
 	private func getPlaceData() -> [BankDepartmentModel] {
 		return BankDepartmentMockData.BankData
+	}
+	
+	private func setUserLocation() {
+		mapView.mapWindow.map.isRotateGesturesEnabled = false
+		mapView.mapWindow.map.move(with:
+									YMKCameraPosition(target: YMKPoint(latitude: 0, longitude: 0), zoom: 14, azimuth: 0, tilt: 0))
+		
+		let scale = UIScreen.main.scale
+		let mapKit = YMKMapKit.sharedInstance()
+		let userLocationLayer = mapKit.createUserLocationLayer(with: mapView.mapWindow)
+		
+		userLocationLayer.setVisibleWithOn(true)
+		userLocationLayer.isHeadingEnabled = true
+//        userLocationLayer.setAnchorWithAnchorNormal(
+//            CGPoint(x: 0.5 * mapView.frame.size.width * scale, y: 0.5 * mapView.frame.size.height * scale),
+//            anchorCourse: CGPoint(x: 0.5 * mapView.frame.size.width * scale, y: 0.83 * mapView.frame.size.height * scale))
+		userLocationLayer.setObjectListenerWith(self)
 	}
 	
 	private func addPlacemark(_ map: YMKMap, title: String, latitude: Double, longutude: Double) {
