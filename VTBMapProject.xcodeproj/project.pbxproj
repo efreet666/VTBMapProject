@@ -10,12 +10,13 @@
 		DF18956B3B44245C9BC9E9C1 /* Pods_VTBMapProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4AA465235FA6C0F96C776AAD /* Pods_VTBMapProject.framework */; };
 		F5A45E662ADA90D50087FDB8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5A45E652ADA90D50087FDB8 /* AppDelegate.swift */; };
 		F5A45E682ADA90D50087FDB8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5A45E672ADA90D50087FDB8 /* SceneDelegate.swift */; };
-		F5A45E6A2ADA90D50087FDB8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5A45E692ADA90D50087FDB8 /* ViewController.swift */; };
+		F5A45E6A2ADA90D50087FDB8 /* MainMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5A45E692ADA90D50087FDB8 /* MainMapViewController.swift */; };
 		F5A45E6D2ADA90D50087FDB8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5A45E6B2ADA90D50087FDB8 /* Main.storyboard */; };
 		F5A45E6F2ADA90D50087FDB8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F5A45E6E2ADA90D50087FDB8 /* Assets.xcassets */; };
 		F5A45E722ADA90D50087FDB8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5A45E702ADA90D50087FDB8 /* LaunchScreen.storyboard */; };
 		F5A45E7B2ADA91140087FDB8 /* BankDepartmentModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5A45E792ADA91140087FDB8 /* BankDepartmentModel.swift */; };
 		F5A45E7C2ADA91140087FDB8 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5A45E7A2ADA91140087FDB8 /* DetailViewController.swift */; };
+		F5A45E802ADA95910087FDB8 /* SegmentContollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5A45E7F2ADA95910087FDB8 /* SegmentContollView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,13 +26,14 @@
 		F5A45E622ADA90D50087FDB8 /* VTBMapProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VTBMapProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5A45E652ADA90D50087FDB8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F5A45E672ADA90D50087FDB8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		F5A45E692ADA90D50087FDB8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F5A45E692ADA90D50087FDB8 /* MainMapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMapViewController.swift; sourceTree = "<group>"; };
 		F5A45E6C2ADA90D50087FDB8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F5A45E6E2ADA90D50087FDB8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F5A45E712ADA90D50087FDB8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F5A45E732ADA90D50087FDB8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F5A45E792ADA91140087FDB8 /* BankDepartmentModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BankDepartmentModel.swift; sourceTree = "<group>"; };
 		F5A45E7A2ADA91140087FDB8 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		F5A45E7F2ADA95910087FDB8 /* SegmentContollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegmentContollView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,8 +87,8 @@
 			isa = PBXGroup;
 			children = (
 				F5A45E652ADA90D50087FDB8 /* AppDelegate.swift */,
+				F5A45E7D2ADA951D0087FDB8 /* MainMap */,
 				F5A45E672ADA90D50087FDB8 /* SceneDelegate.swift */,
-				F5A45E692ADA90D50087FDB8 /* ViewController.swift */,
 				F5A45E792ADA91140087FDB8 /* BankDepartmentModel.swift */,
 				F5A45E7A2ADA91140087FDB8 /* DetailViewController.swift */,
 				F5A45E6B2ADA90D50087FDB8 /* Main.storyboard */,
@@ -95,6 +97,23 @@
 				F5A45E732ADA90D50087FDB8 /* Info.plist */,
 			);
 			path = VTBMapProject;
+			sourceTree = "<group>";
+		};
+		F5A45E7D2ADA951D0087FDB8 /* MainMap */ = {
+			isa = PBXGroup;
+			children = (
+				F5A45E7E2ADA95420087FDB8 /* View */,
+				F5A45E692ADA90D50087FDB8 /* MainMapViewController.swift */,
+			);
+			path = MainMap;
+			sourceTree = "<group>";
+		};
+		F5A45E7E2ADA95420087FDB8 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F5A45E7F2ADA95910087FDB8 /* SegmentContollView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -230,10 +249,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F5A45E6A2ADA90D50087FDB8 /* ViewController.swift in Sources */,
+				F5A45E6A2ADA90D50087FDB8 /* MainMapViewController.swift in Sources */,
 				F5A45E7B2ADA91140087FDB8 /* BankDepartmentModel.swift in Sources */,
 				F5A45E7C2ADA91140087FDB8 /* DetailViewController.swift in Sources */,
 				F5A45E662ADA90D50087FDB8 /* AppDelegate.swift in Sources */,
+				F5A45E802ADA95910087FDB8 /* SegmentContollView.swift in Sources */,
 				F5A45E682ADA90D50087FDB8 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
