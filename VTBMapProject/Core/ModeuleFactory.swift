@@ -1,8 +1,19 @@
-//
-//  ModeuleFactory.swift
-//  VTBMapProject
-//
-//  Created by Admin on 14.10.2023.
-//
-
 import Foundation
+import UIKit
+
+protocol ModuleFactoryProtocol {
+    func getMapModule() -> UIViewController
+}
+
+final class ModuleFactory: ModuleFactoryProtocol {
+    
+    private let container: DIContainer
+    
+    init(container: DIContainer) {
+        self.container = container
+    }
+    
+    func getMapModule() -> UIViewController {
+        return ViewController()
+    }
+}
