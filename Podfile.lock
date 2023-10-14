@@ -1,0 +1,24 @@
+PODS:
+  - SnapKit (5.6.0)
+  - TinyConstraints (4.0.2)
+  - YandexMapsMobile (4.4.0-lite)
+
+DEPENDENCIES:
+  - SnapKit (~> 5.6.0)
+  - TinyConstraints
+  - YandexMapsMobile (= 4.4.0-lite)
+
+SPEC REPOS:
+  trunk:
+    - SnapKit
+    - TinyConstraints
+    - YandexMapsMobile
+
+SPEC CHECKSUMS:
+  SnapKit: e01d52ebb8ddbc333eefe2132acf85c8227d9c25
+  TinyConstraints: 7b7ccc0c485bb3bb47082138ff28bc33cd49897f
+  YandexMapsMobile: 74934971bbd3716e6daecfebed696c07b83b6b22
+
+PODFILE CHECKSUM: c083579f75cd8d8549937c7b5a9e7598bbbc718a
+
+COCOAPODS: 1.13.0
