@@ -7,13 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		845002202ADAA0FA0080E974 /* SegmentContollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8450021E2ADAA0FA0080E974 /* SegmentContollView.swift */; };
+		845002212ADAA0FA0080E974 /* MainMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8450021F2ADAA0FA0080E974 /* MainMapViewController.swift */; };
 		846BEEC82ADA952B0084F961 /* DIContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846BEEC72ADA952B0084F961 /* DIContainer.swift */; };
 		846BEECA2ADA95750084F961 /* ModeuleFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846BEEC92ADA95750084F961 /* ModeuleFactory.swift */; };
 		846BEECD2ADA963F0084F961 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846BEECC2ADA963F0084F961 /* AppCoordinator.swift */; };
 		DF18956B3B44245C9BC9E9C1 /* Pods_VTBMapProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4AA465235FA6C0F96C776AAD /* Pods_VTBMapProject.framework */; };
 		F5A45E662ADA90D50087FDB8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5A45E652ADA90D50087FDB8 /* AppDelegate.swift */; };
 		F5A45E682ADA90D50087FDB8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5A45E672ADA90D50087FDB8 /* SceneDelegate.swift */; };
-		F5A45E6A2ADA90D50087FDB8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5A45E692ADA90D50087FDB8 /* ViewController.swift */; };
 		F5A45E6F2ADA90D50087FDB8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F5A45E6E2ADA90D50087FDB8 /* Assets.xcassets */; };
 		F5A45E722ADA90D50087FDB8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5A45E702ADA90D50087FDB8 /* LaunchScreen.storyboard */; };
 		F5A45E7B2ADA91140087FDB8 /* BankDepartmentModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5A45E792ADA91140087FDB8 /* BankDepartmentModel.swift */; };
@@ -22,6 +23,8 @@
 
 /* Begin PBXFileReference section */
 		4AA465235FA6C0F96C776AAD /* Pods_VTBMapProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VTBMapProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8450021E2ADAA0FA0080E974 /* SegmentContollView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SegmentContollView.swift; sourceTree = "<group>"; };
+		8450021F2ADAA0FA0080E974 /* MainMapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainMapViewController.swift; sourceTree = "<group>"; };
 		846BEEC72ADA952B0084F961 /* DIContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DIContainer.swift; sourceTree = "<group>"; };
 		846BEEC92ADA95750084F961 /* ModeuleFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModeuleFactory.swift; sourceTree = "<group>"; };
 		846BEECC2ADA963F0084F961 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
@@ -30,7 +33,6 @@
 		F5A45E622ADA90D50087FDB8 /* VTBMapProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VTBMapProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5A45E652ADA90D50087FDB8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F5A45E672ADA90D50087FDB8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		F5A45E692ADA90D50087FDB8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		F5A45E6E2ADA90D50087FDB8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F5A45E712ADA90D50087FDB8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F5A45E732ADA90D50087FDB8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -57,6 +59,23 @@
 				F3A9031687DE4BFF694853CE /* Pods-VTBMapProject.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		8450021C2ADAA0FA0080E974 /* MainMap */ = {
+			isa = PBXGroup;
+			children = (
+				8450021D2ADAA0FA0080E974 /* View */,
+				8450021F2ADAA0FA0080E974 /* MainMapViewController.swift */,
+			);
+			path = MainMap;
+			sourceTree = "<group>";
+		};
+		8450021D2ADAA0FA0080E974 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8450021E2ADAA0FA0080E974 /* SegmentContollView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		846BEEC62ADA94DE0084F961 /* Core */ = {
@@ -107,9 +126,9 @@
 		F5A45E642ADA90D50087FDB8 /* VTBMapProject */ = {
 			isa = PBXGroup;
 			children = (
+				8450021C2ADAA0FA0080E974 /* MainMap */,
 				846BEECB2ADA96250084F961 /* App */,
 				846BEEC62ADA94DE0084F961 /* Core */,
-				F5A45E692ADA90D50087FDB8 /* ViewController.swift */,
 				F5A45E792ADA91140087FDB8 /* BankDepartmentModel.swift */,
 				F5A45E7A2ADA91140087FDB8 /* DetailViewController.swift */,
 				F5A45E6E2ADA90D50087FDB8 /* Assets.xcassets */,
@@ -251,12 +270,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F5A45E6A2ADA90D50087FDB8 /* ViewController.swift in Sources */,
 				F5A45E7B2ADA91140087FDB8 /* BankDepartmentModel.swift in Sources */,
 				F5A45E7C2ADA91140087FDB8 /* DetailViewController.swift in Sources */,
 				846BEECA2ADA95750084F961 /* ModeuleFactory.swift in Sources */,
 				846BEECD2ADA963F0084F961 /* AppCoordinator.swift in Sources */,
+				845002202ADAA0FA0080E974 /* SegmentContollView.swift in Sources */,
 				F5A45E662ADA90D50087FDB8 /* AppDelegate.swift in Sources */,
+				845002212ADAA0FA0080E974 /* MainMapViewController.swift in Sources */,
 				846BEEC82ADA952B0084F961 /* DIContainer.swift in Sources */,
 				F5A45E682ADA90D50087FDB8 /* SceneDelegate.swift in Sources */,
 			);

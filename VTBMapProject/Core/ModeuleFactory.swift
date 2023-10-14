@@ -14,6 +14,6 @@ final class ModuleFactory: ModuleFactoryProtocol {
     }
     
     func getMapModule() -> UIViewController {
-        return ViewController()
+        return MainMapViewController()
     }
 }
