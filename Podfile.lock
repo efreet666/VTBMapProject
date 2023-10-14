@@ -1,24 +1,28 @@
 PODS:
+  - lottie-ios (3.5.0)
   - SnapKit (5.6.0)
   - TinyConstraints (4.0.2)
   - YandexMapsMobile (4.4.0-lite)
 
 DEPENDENCIES:
+  - lottie-ios (~> 3.2)
   - SnapKit (~> 5.6.0)
   - TinyConstraints
   - YandexMapsMobile (= 4.4.0-lite)
 
 SPEC REPOS:
   trunk:
+    - lottie-ios
     - SnapKit
     - TinyConstraints
     - YandexMapsMobile
 
 SPEC CHECKSUMS:
+  lottie-ios: c55158d67d0629a260625cc2ded2052b829e3c3e
   SnapKit: e01d52ebb8ddbc333eefe2132acf85c8227d9c25
   TinyConstraints: 7b7ccc0c485bb3bb47082138ff28bc33cd49897f
   YandexMapsMobile: 74934971bbd3716e6daecfebed696c07b83b6b22
 
-PODFILE CHECKSUM: c083579f75cd8d8549937c7b5a9e7598bbbc718a
+PODFILE CHECKSUM: 8e6f3a356337e228746d95c2ec54ccccfed6b417
 
 COCOAPODS: 1.13.0

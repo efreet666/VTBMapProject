@@ -24,6 +24,14 @@
 		F5A45E722ADA90D50087FDB8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5A45E702ADA90D50087FDB8 /* LaunchScreen.storyboard */; };
 		F5A45E7B2ADA91140087FDB8 /* BankDepartmentModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5A45E792ADA91140087FDB8 /* BankDepartmentModel.swift */; };
 		F5A45E7C2ADA91140087FDB8 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5A45E7A2ADA91140087FDB8 /* DetailViewController.swift */; };
+		F5A45E982ADB1CE60087FDB8 /* Пинкод.json in Resources */ = {isa = PBXBuildFile; fileRef = F5A45E942ADB1CE50087FDB8 /* Пинкод.json */; };
+		F5A45E992ADB1CE60087FDB8 /* Язык.json in Resources */ = {isa = PBXBuildFile; fileRef = F5A45E952ADB1CE50087FDB8 /* Язык.json */; };
+		F5A45E9A2ADB1CE60087FDB8 /* Разворот пальцы подмиг.json in Resources */ = {isa = PBXBuildFile; fileRef = F5A45E962ADB1CE50087FDB8 /* Разворот пальцы подмиг.json */; };
+		F5A45E9B2ADB1CE60087FDB8 /* Кнопка полёт (1).json in Resources */ = {isa = PBXBuildFile; fileRef = F5A45E972ADB1CE60087FDB8 /* Кнопка полёт (1).json */; };
+		F5A45E9E2ADB1E290087FDB8 /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5A45E9D2ADB1E290087FDB8 /* OnboardingViewController.swift */; };
+		F5A45EA02ADB2D790087FDB8 /* OnboardingModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5A45E9F2ADB2D790087FDB8 /* OnboardingModel.swift */; };
+		F5A45EA22ADB2E520087FDB8 /* OnboardingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5A45EA12ADB2E520087FDB8 /* OnboardingCell.swift */; };
+		F5A45EA42ADB31B30087FDB8 /* Layout.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5A45EA32ADB31B30087FDB8 /* Layout.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +56,14 @@
 		F5A45E732ADA90D50087FDB8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F5A45E792ADA91140087FDB8 /* BankDepartmentModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BankDepartmentModel.swift; sourceTree = "<group>"; };
 		F5A45E7A2ADA91140087FDB8 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		F5A45E942ADB1CE50087FDB8 /* Пинкод.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "Пинкод.json"; sourceTree = "<group>"; };
+		F5A45E952ADB1CE50087FDB8 /* Язык.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "Язык.json"; sourceTree = "<group>"; };
+		F5A45E962ADB1CE50087FDB8 /* Разворот пальцы подмиг.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "Разворот пальцы подмиг.json"; sourceTree = "<group>"; };
+		F5A45E972ADB1CE60087FDB8 /* Кнопка полёт (1).json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "Кнопка полёт (1).json"; sourceTree = "<group>"; };
+		F5A45E9D2ADB1E290087FDB8 /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
+		F5A45E9F2ADB2D790087FDB8 /* OnboardingModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingModel.swift; sourceTree = "<group>"; };
+		F5A45EA12ADB2E520087FDB8 /* OnboardingCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingCell.swift; sourceTree = "<group>"; };
+		F5A45EA32ADB31B30087FDB8 /* Layout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Layout.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +92,10 @@
 			children = (
 				8450021D2ADAA0FA0080E974 /* View */,
 				8450021F2ADAA0FA0080E974 /* MainMapViewController.swift */,
+				F5A45E9D2ADB1E290087FDB8 /* OnboardingViewController.swift */,
+				F5A45EA32ADB31B30087FDB8 /* Layout.swift */,
+				F5A45EA12ADB2E520087FDB8 /* OnboardingCell.swift */,
+				F5A45E9F2ADB2D790087FDB8 /* OnboardingModel.swift */,
 			);
 			path = MainMap;
 			sourceTree = "<group>";
@@ -155,6 +175,7 @@
 		F5A45E642ADA90D50087FDB8 /* VTBMapProject */ = {
 			isa = PBXGroup;
 			children = (
+				F5A45E9C2ADB1CEE0087FDB8 /* Animation */,
 				845002252ADAA2EA0080E974 /* Views */,
 				845002222ADAA1E60080E974 /* AdressList */,
 				8450021C2ADAA0FA0080E974 /* MainMap */,
@@ -167,6 +188,17 @@
 				F5A45E732ADA90D50087FDB8 /* Info.plist */,
 			);
 			path = VTBMapProject;
+			sourceTree = "<group>";
+		};
+		F5A45E9C2ADB1CEE0087FDB8 /* Animation */ = {
+			isa = PBXGroup;
+			children = (
+				F5A45E972ADB1CE60087FDB8 /* Кнопка полёт (1).json */,
+				F5A45E942ADB1CE50087FDB8 /* Пинкод.json */,
+				F5A45E962ADB1CE50087FDB8 /* Разворот пальцы подмиг.json */,
+				F5A45E952ADB1CE50087FDB8 /* Язык.json */,
+			);
+			path = Animation;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -230,6 +262,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F5A45E992ADB1CE60087FDB8 /* Язык.json in Resources */,
+				F5A45E982ADB1CE60087FDB8 /* Пинкод.json in Resources */,
+				F5A45E9A2ADB1CE60087FDB8 /* Разворот пальцы подмиг.json in Resources */,
+				F5A45E9B2ADB1CE60087FDB8 /* Кнопка полёт (1).json in Resources */,
 				F5A45E722ADA90D50087FDB8 /* LaunchScreen.storyboard in Resources */,
 				F5A45E6F2ADA90D50087FDB8 /* Assets.xcassets in Resources */,
 			);
@@ -301,13 +337,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F5A45EA22ADB2E520087FDB8 /* OnboardingCell.swift in Sources */,
 				F5A45E7B2ADA91140087FDB8 /* BankDepartmentModel.swift in Sources */,
 				845002242ADAA2A70080E974 /* AdressListViewController.swift in Sources */,
 				F5A45E7C2ADA91140087FDB8 /* DetailViewController.swift in Sources */,
 				846BEECA2ADA95750084F961 /* ModeuleFactory.swift in Sources */,
+				F5A45EA42ADB31B30087FDB8 /* Layout.swift in Sources */,
+				F5A45EA02ADB2D790087FDB8 /* OnboardingModel.swift in Sources */,
 				846BEECD2ADA963F0084F961 /* AppCoordinator.swift in Sources */,
 				8450022D2ADAAD8E0080E974 /* AdressListCell.swift in Sources */,
 				845002292ADAA44F0080E974 /* AdressSearchBar.swift in Sources */,
+				F5A45E9E2ADB1E290087FDB8 /* OnboardingViewController.swift in Sources */,
 				845002202ADAA0FA0080E974 /* SegmentContollView.swift in Sources */,
 				F5A45E662ADA90D50087FDB8 /* AppDelegate.swift in Sources */,
 				8450022B2ADAABB20080E974 /* AdressListModels.swift in Sources */,

@@ -9,4 +9,5 @@ target 'VTBMapProject' do
   pod 'YandexMapsMobile', '4.4.0-lite'
   pod "TinyConstraints"
   pod 'SnapKit', '~> 5.6.0'
+  pod 'lottie-ios', '~> 3.2'
 end

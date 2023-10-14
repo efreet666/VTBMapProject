@@ -11,8 +11,6 @@ final class MainMapViewController: UIViewController, YMKUserLocationObjectListen
 	// MARK: - View
 	private let customView = SegmentContollView()
 	
-
-	
 	override func viewDidLoad() {
 		super.viewDidLoad()
 		self.view.backgroundColor = .lightGray
