@@ -68,7 +68,6 @@ final class MainMapViewController: UIViewController, YMKUserLocationObjectListen
 		return im
 	}()
 	
-	
 	private func configureLottie(json: String) {
 		let jsonName = json
 		let animation = LottieAnimation.named(jsonName)
@@ -77,7 +76,7 @@ final class MainMapViewController: UIViewController, YMKUserLocationObjectListen
 		animationView.animation = animation
 		animationView.play()
 		animationView.loopMode = .playOnce
-		DispatchQueue.main.asyncAfter(deadline: .now() + 9) {
+		DispatchQueue.main.asyncAfter(deadline: .now() + 8) {
 			self.animationView.isHidden = true
 		}
 	}
@@ -149,7 +148,9 @@ final class MainMapViewController: UIViewController, YMKUserLocationObjectListen
 	}
 	
 	@objc func openFavorite() {
-		
+		let vc = FavoriteVC()
+		vc.modalPresentationStyle = .pageSheet
+		self.present(vc, animated: true, completion: nil)
 	}
 	
 	private func setupPlaceData() {

@@ -20,6 +20,8 @@ final class DetailViewController: UIViewController {
 		self.view.backgroundColor = .white
 		self.view.addSubview(detailView)
 		detailView.edgesToSuperview(usingSafeArea: true)
+		
     }
+	
 }
 
