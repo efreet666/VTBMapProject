@@ -3,7 +3,7 @@ import UIKit
 
 protocol ModuleFactoryProtocol {
     func getMapModule() -> UIViewController
-    func getAdressListModule() -> UIViewController
+    func getAdressListModule(coordinator: AddressListCoordinator) -> UIViewController
 }
 
 final class ModuleFactory: ModuleFactoryProtocol {
@@ -18,10 +18,11 @@ final class ModuleFactory: ModuleFactoryProtocol {
         return MainMapViewController()
     }
     
-    func getAdressListModule() -> UIViewController {
-        let vm = AdressListViewModel()
+    func getAdressListModule(coordinator: AddressListCoordinator) -> UIViewController {
+        let vm = AdressListViewModel(coordinator: coordinator)
         let vc = AdressListViewController()
         vc.viewModel = vm
+        vm.viewController = vc
         return vc
     }
 }

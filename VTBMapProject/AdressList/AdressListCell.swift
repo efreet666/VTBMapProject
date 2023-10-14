@@ -49,6 +49,7 @@ final class AdressListCell: UITableViewCell {
             $0.top.equalTo(name.snp.bottom).offset(4)
             $0.leading.equalToSuperview().offset(16)
             $0.trailing.equalToSuperview().inset(16)
+            $0.bottom.equalToSuperview().inset(12)
         }
     }
     
