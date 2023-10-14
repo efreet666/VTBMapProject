@@ -6,7 +6,7 @@ fileprivate typealias AdressListDataSource = UITableViewDiffableDataSource<Int, 
 
 final class AdressListViewController: UIViewController {
     
-     var viewModel: AdressListViewModel?
+    var viewModel: AdressListViewModel?
     
     private let segmentControll = SegmentContollView()
     
@@ -16,7 +16,14 @@ final class AdressListViewController: UIViewController {
         let tableView = UITableView()
         tableView.backgroundColor = .white
         tableView.register(AdressListCell.self, forCellReuseIdentifier: AdressListCell.identifier)
+        tableView.separatorStyle = .none
         return tableView
+    }()
+    
+    private let activityIndicator: UIActivityIndicatorView = {
+        let activity = UIActivityIndicatorView(style: .medium)
+        activity.isHidden = true
+        return activity
     }()
     
     private lazy var dataSource: AdressListDataSource = {
@@ -35,12 +42,21 @@ final class AdressListViewController: UIViewController {
         makeSubviewLayout()
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        activityIndicator.isHidden = false
+        activityIndicator.startAnimating()
+        viewModel?.getPointAddresses()
+    }
+    
     private func setupView() {
         view.backgroundColor = .white
+        navigationController?.navigationBar.isHidden = true
         [
         segmentControll,
         searchBar,
         tableView,
+        activityIndicator
         ].forEach(view.addSubview)
     }
     
@@ -63,5 +79,22 @@ final class AdressListViewController: UIViewController {
             $0.leading.trailing.equalToSuperview()
             $0.bottom.equalTo(view.safeAreaLayoutGuide)
         }
+        
+        activityIndicator.snp.makeConstraints {
+            $0.centerX.equalToSuperview()
+            $0.centerY.equalToSuperview()
+        }
+    }
+}
+
+extension AdressListViewController: AddressListPresentable {
+    func displayAdresses(_ items: [AdressListItem]) {
+        activityIndicator.stopAnimating()
+        activityIndicator.isHidden = true
+        var snapshot = NSDiffableDataSourceSnapshot<Int, AdressListItem>()
+        snapshot.appendSections([0])
+        snapshot.appendItems(items, toSection: 0)
+        dataSource.apply(snapshot)
+        tableView.reloadData()
     }
 }

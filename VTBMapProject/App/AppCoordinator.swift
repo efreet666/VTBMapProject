@@ -13,9 +13,11 @@ final class AppCoordinator {
     }
     
     func start() {
-        let vc = factory.getAdressListModule()
-        window?.rootViewController = vc
+        let navCont = UINavigationController()
+        let coordinator = AddressListCoordinator(navigationController: navCont, factory: factory)
+        window?.rootViewController = navCont
         window?.makeKeyAndVisible()
+        coordinator.start()
     }
     
 }

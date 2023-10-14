@@ -14,6 +14,13 @@
 		845002292ADAA44F0080E974 /* AdressSearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845002282ADAA44F0080E974 /* AdressSearchBar.swift */; };
 		8450022B2ADAABB20080E974 /* AdressListModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8450022A2ADAABB20080E974 /* AdressListModels.swift */; };
 		8450022D2ADAAD8E0080E974 /* AdressListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8450022C2ADAAD8E0080E974 /* AdressListCell.swift */; };
+		8450022F2ADAB3940080E974 /* AddressListPresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8450022E2ADAB3940080E974 /* AddressListPresentable.swift */; };
+		845002312ADAC73F0080E974 /* AddressListCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845002302ADAC73F0080E974 /* AddressListCoordinator.swift */; };
+		845002342ADACAD90080E974 /* FilterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845002332ADACAD90080E974 /* FilterViewController.swift */; };
+		845002362ADACAE30080E974 /* FilterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845002352ADACAE30080E974 /* FilterViewModel.swift */; };
+		845002382ADACB010080E974 /* FilterCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845002372ADACB010080E974 /* FilterCoordinator.swift */; };
+		8450023B2ADAD28C0080E974 /* FilterRoundedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8450023A2ADAD28C0080E974 /* FilterRoundedCell.swift */; };
+		8450023D2ADAD6580080E974 /* HeaderFiltercell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8450023C2ADAD6580080E974 /* HeaderFiltercell.swift */; };
 		846BEEC82ADA952B0084F961 /* DIContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846BEEC72ADA952B0084F961 /* DIContainer.swift */; };
 		846BEECA2ADA95750084F961 /* ModeuleFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846BEEC92ADA95750084F961 /* ModeuleFactory.swift */; };
 		846BEECD2ADA963F0084F961 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846BEECC2ADA963F0084F961 /* AppCoordinator.swift */; };
@@ -35,6 +42,13 @@
 		845002282ADAA44F0080E974 /* AdressSearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdressSearchBar.swift; sourceTree = "<group>"; };
 		8450022A2ADAABB20080E974 /* AdressListModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdressListModels.swift; sourceTree = "<group>"; };
 		8450022C2ADAAD8E0080E974 /* AdressListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdressListCell.swift; sourceTree = "<group>"; };
+		8450022E2ADAB3940080E974 /* AddressListPresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressListPresentable.swift; sourceTree = "<group>"; };
+		845002302ADAC73F0080E974 /* AddressListCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressListCoordinator.swift; sourceTree = "<group>"; };
+		845002332ADACAD90080E974 /* FilterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterViewController.swift; sourceTree = "<group>"; };
+		845002352ADACAE30080E974 /* FilterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterViewModel.swift; sourceTree = "<group>"; };
+		845002372ADACB010080E974 /* FilterCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterCoordinator.swift; sourceTree = "<group>"; };
+		8450023A2ADAD28C0080E974 /* FilterRoundedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterRoundedCell.swift; sourceTree = "<group>"; };
+		8450023C2ADAD6580080E974 /* HeaderFiltercell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderFiltercell.swift; sourceTree = "<group>"; };
 		846BEEC72ADA952B0084F961 /* DIContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DIContainer.swift; sourceTree = "<group>"; };
 		846BEEC92ADA95750084F961 /* ModeuleFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModeuleFactory.swift; sourceTree = "<group>"; };
 		846BEECC2ADA963F0084F961 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
@@ -95,6 +109,8 @@
 				845002262ADAA3030080E974 /* AdressListViewModel.swift */,
 				8450022A2ADAABB20080E974 /* AdressListModels.swift */,
 				8450022C2ADAAD8E0080E974 /* AdressListCell.swift */,
+				8450022E2ADAB3940080E974 /* AddressListPresentable.swift */,
+				845002302ADAC73F0080E974 /* AddressListCoordinator.swift */,
 			);
 			path = AdressList;
 			sourceTree = "<group>";
@@ -105,6 +121,26 @@
 				845002282ADAA44F0080E974 /* AdressSearchBar.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		845002322ADACAC70080E974 /* Filter */ = {
+			isa = PBXGroup;
+			children = (
+				845002392ADACC9E0080E974 /* Cells */,
+				845002332ADACAD90080E974 /* FilterViewController.swift */,
+				845002352ADACAE30080E974 /* FilterViewModel.swift */,
+				845002372ADACB010080E974 /* FilterCoordinator.swift */,
+			);
+			path = Filter;
+			sourceTree = "<group>";
+		};
+		845002392ADACC9E0080E974 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				8450023A2ADAD28C0080E974 /* FilterRoundedCell.swift */,
+				8450023C2ADAD6580080E974 /* HeaderFiltercell.swift */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 		846BEEC62ADA94DE0084F961 /* Core */ = {
@@ -155,6 +191,7 @@
 		F5A45E642ADA90D50087FDB8 /* VTBMapProject */ = {
 			isa = PBXGroup;
 			children = (
+				845002322ADACAC70080E974 /* Filter */,
 				845002252ADAA2EA0080E974 /* Views */,
 				845002222ADAA1E60080E974 /* AdressList */,
 				8450021C2ADAA0FA0080E974 /* MainMap */,
@@ -304,17 +341,24 @@
 				F5A45E7B2ADA91140087FDB8 /* BankDepartmentModel.swift in Sources */,
 				845002242ADAA2A70080E974 /* AdressListViewController.swift in Sources */,
 				F5A45E7C2ADA91140087FDB8 /* DetailViewController.swift in Sources */,
+				845002342ADACAD90080E974 /* FilterViewController.swift in Sources */,
 				846BEECA2ADA95750084F961 /* ModeuleFactory.swift in Sources */,
 				846BEECD2ADA963F0084F961 /* AppCoordinator.swift in Sources */,
 				8450022D2ADAAD8E0080E974 /* AdressListCell.swift in Sources */,
 				845002292ADAA44F0080E974 /* AdressSearchBar.swift in Sources */,
 				845002202ADAA0FA0080E974 /* SegmentContollView.swift in Sources */,
+				8450023D2ADAD6580080E974 /* HeaderFiltercell.swift in Sources */,
 				F5A45E662ADA90D50087FDB8 /* AppDelegate.swift in Sources */,
+				845002362ADACAE30080E974 /* FilterViewModel.swift in Sources */,
 				8450022B2ADAABB20080E974 /* AdressListModels.swift in Sources */,
 				845002212ADAA0FA0080E974 /* MainMapViewController.swift in Sources */,
+				8450023B2ADAD28C0080E974 /* FilterRoundedCell.swift in Sources */,
 				845002272ADAA3030080E974 /* AdressListViewModel.swift in Sources */,
+				8450022F2ADAB3940080E974 /* AddressListPresentable.swift in Sources */,
+				845002312ADAC73F0080E974 /* AddressListCoordinator.swift in Sources */,
 				846BEEC82ADA952B0084F961 /* DIContainer.swift in Sources */,
 				F5A45E682ADA90D50087FDB8 /* SceneDelegate.swift in Sources */,
+				845002382ADACB010080E974 /* FilterCoordinator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
