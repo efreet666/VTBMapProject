@@ -9,6 +9,11 @@
 /* Begin PBXBuildFile section */
 		845002202ADAA0FA0080E974 /* SegmentContollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8450021E2ADAA0FA0080E974 /* SegmentContollView.swift */; };
 		845002212ADAA0FA0080E974 /* MainMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8450021F2ADAA0FA0080E974 /* MainMapViewController.swift */; };
+		845002242ADAA2A70080E974 /* AdressListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845002232ADAA2A70080E974 /* AdressListViewController.swift */; };
+		845002272ADAA3030080E974 /* AdressListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845002262ADAA3030080E974 /* AdressListViewModel.swift */; };
+		845002292ADAA44F0080E974 /* AdressSearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845002282ADAA44F0080E974 /* AdressSearchBar.swift */; };
+		8450022B2ADAABB20080E974 /* AdressListModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8450022A2ADAABB20080E974 /* AdressListModels.swift */; };
+		8450022D2ADAAD8E0080E974 /* AdressListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8450022C2ADAAD8E0080E974 /* AdressListCell.swift */; };
 		846BEEC82ADA952B0084F961 /* DIContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846BEEC72ADA952B0084F961 /* DIContainer.swift */; };
 		846BEECA2ADA95750084F961 /* ModeuleFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846BEEC92ADA95750084F961 /* ModeuleFactory.swift */; };
 		846BEECD2ADA963F0084F961 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846BEECC2ADA963F0084F961 /* AppCoordinator.swift */; };
@@ -25,6 +30,11 @@
 		4AA465235FA6C0F96C776AAD /* Pods_VTBMapProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VTBMapProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8450021E2ADAA0FA0080E974 /* SegmentContollView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SegmentContollView.swift; sourceTree = "<group>"; };
 		8450021F2ADAA0FA0080E974 /* MainMapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainMapViewController.swift; sourceTree = "<group>"; };
+		845002232ADAA2A70080E974 /* AdressListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdressListViewController.swift; sourceTree = "<group>"; };
+		845002262ADAA3030080E974 /* AdressListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdressListViewModel.swift; sourceTree = "<group>"; };
+		845002282ADAA44F0080E974 /* AdressSearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdressSearchBar.swift; sourceTree = "<group>"; };
+		8450022A2ADAABB20080E974 /* AdressListModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdressListModels.swift; sourceTree = "<group>"; };
+		8450022C2ADAAD8E0080E974 /* AdressListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdressListCell.swift; sourceTree = "<group>"; };
 		846BEEC72ADA952B0084F961 /* DIContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DIContainer.swift; sourceTree = "<group>"; };
 		846BEEC92ADA95750084F961 /* ModeuleFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModeuleFactory.swift; sourceTree = "<group>"; };
 		846BEECC2ADA963F0084F961 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
@@ -78,6 +88,25 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		845002222ADAA1E60080E974 /* AdressList */ = {
+			isa = PBXGroup;
+			children = (
+				845002232ADAA2A70080E974 /* AdressListViewController.swift */,
+				845002262ADAA3030080E974 /* AdressListViewModel.swift */,
+				8450022A2ADAABB20080E974 /* AdressListModels.swift */,
+				8450022C2ADAAD8E0080E974 /* AdressListCell.swift */,
+			);
+			path = AdressList;
+			sourceTree = "<group>";
+		};
+		845002252ADAA2EA0080E974 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				845002282ADAA44F0080E974 /* AdressSearchBar.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		846BEEC62ADA94DE0084F961 /* Core */ = {
 			isa = PBXGroup;
 			children = (
@@ -126,6 +155,8 @@
 		F5A45E642ADA90D50087FDB8 /* VTBMapProject */ = {
 			isa = PBXGroup;
 			children = (
+				845002252ADAA2EA0080E974 /* Views */,
+				845002222ADAA1E60080E974 /* AdressList */,
 				8450021C2ADAA0FA0080E974 /* MainMap */,
 				846BEECB2ADA96250084F961 /* App */,
 				846BEEC62ADA94DE0084F961 /* Core */,
@@ -271,12 +302,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				F5A45E7B2ADA91140087FDB8 /* BankDepartmentModel.swift in Sources */,
+				845002242ADAA2A70080E974 /* AdressListViewController.swift in Sources */,
 				F5A45E7C2ADA91140087FDB8 /* DetailViewController.swift in Sources */,
 				846BEECA2ADA95750084F961 /* ModeuleFactory.swift in Sources */,
 				846BEECD2ADA963F0084F961 /* AppCoordinator.swift in Sources */,
+				8450022D2ADAAD8E0080E974 /* AdressListCell.swift in Sources */,
+				845002292ADAA44F0080E974 /* AdressSearchBar.swift in Sources */,
 				845002202ADAA0FA0080E974 /* SegmentContollView.swift in Sources */,
 				F5A45E662ADA90D50087FDB8 /* AppDelegate.swift in Sources */,
+				8450022B2ADAABB20080E974 /* AdressListModels.swift in Sources */,
 				845002212ADAA0FA0080E974 /* MainMapViewController.swift in Sources */,
+				845002272ADAA3030080E974 /* AdressListViewModel.swift in Sources */,
 				846BEEC82ADA952B0084F961 /* DIContainer.swift in Sources */,
 				F5A45E682ADA90D50087FDB8 /* SceneDelegate.swift in Sources */,
 			);

@@ -13,7 +13,7 @@ final class AppCoordinator {
     }
     
     func start() {
-        let vc = factory.getMapModule()
+        let vc = factory.getAdressListModule()
         window?.rootViewController = vc
         window?.makeKeyAndVisible()
     }
