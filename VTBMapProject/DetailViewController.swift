@@ -9,10 +9,17 @@ import UIKit
 
 final class DetailViewController: UIViewController {
 
+	let detailView: UIImageView = {
+		let iv = UIImageView()
+		iv.image = UIImage(named: "Detail")
+		return iv
+	}()
+	
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        self.view.backgroundColor = .blue
+		self.view.backgroundColor = .white
+		self.view.addSubview(detailView)
+		detailView.edgesToSuperview(usingSafeArea: true)
     }
 }
 

@@ -92,10 +92,7 @@
 			children = (
 				8450021D2ADAA0FA0080E974 /* View */,
 				8450021F2ADAA0FA0080E974 /* MainMapViewController.swift */,
-				F5A45E9D2ADB1E290087FDB8 /* OnboardingViewController.swift */,
-				F5A45EA32ADB31B30087FDB8 /* Layout.swift */,
-				F5A45EA12ADB2E520087FDB8 /* OnboardingCell.swift */,
-				F5A45E9F2ADB2D790087FDB8 /* OnboardingModel.swift */,
+				F5A45EA52ADB369D0087FDB8 /* Onboarding */,
 			);
 			path = MainMap;
 			sourceTree = "<group>";
@@ -199,6 +196,17 @@
 				F5A45E952ADB1CE50087FDB8 /* Язык.json */,
 			);
 			path = Animation;
+			sourceTree = "<group>";
+		};
+		F5A45EA52ADB369D0087FDB8 /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				F5A45E9D2ADB1E290087FDB8 /* OnboardingViewController.swift */,
+				F5A45EA32ADB31B30087FDB8 /* Layout.swift */,
+				F5A45EA12ADB2E520087FDB8 /* OnboardingCell.swift */,
+				F5A45E9F2ADB2D790087FDB8 /* OnboardingModel.swift */,
+			);
+			path = Onboarding;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

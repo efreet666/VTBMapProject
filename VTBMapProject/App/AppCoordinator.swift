@@ -18,5 +18,12 @@ final class AppCoordinator {
         window?.rootViewController = vc
         window?.makeKeyAndVisible()
     }
+	
+	func main() {
+		let vc = MainMapViewController()
+		//factory.getAdressListModule()
+		window?.rootViewController = vc
+		window?.makeKeyAndVisible()
+	}
     
 }

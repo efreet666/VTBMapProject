@@ -10,7 +10,7 @@ import UIKit
 class SegmentContollView: UIView {
 	
 	let segmentedControl: UISegmentedControl = {
-		let segmentedControl = UISegmentedControl(items: ["Segment 1", "Segment 2"])
+		let segmentedControl = UISegmentedControl(items: ["На карте", "Списком"])
 		segmentedControl.selectedSegmentIndex = 0
 		segmentedControl.tintColor = .blue
 		return segmentedControl
