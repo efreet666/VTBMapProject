@@ -2,7 +2,7 @@ import Foundation
 import UIKit
 import SnapKit
 
-final class HeaderFiltercell: UICollectionViewListCell {
+final class FilterInsetCell: UICollectionViewListCell {
     
     let headerLable: UILabel = {
       let label = UILabel()

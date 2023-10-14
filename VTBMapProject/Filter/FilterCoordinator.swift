@@ -7,7 +7,12 @@ final class FilterCoordinator {
     
     private let factory: ModuleFactoryProtocol
     
+    init(navigationController: UINavigationController, factory: ModuleFactoryProtocol) {
+        self.navigationController = navigationController
+        self.factory = factory
+    }
+    
     func start() {
-        navigationController.present(, animated: <#T##Bool#>)
+        navigationController.pushViewController(factory.getFilterModule(coordinator: self), animated: true)
     }
 }
