@@ -13,6 +13,8 @@
 		F5A45E6D2ADA90D50087FDB8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5A45E6B2ADA90D50087FDB8 /* Main.storyboard */; };
 		F5A45E6F2ADA90D50087FDB8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F5A45E6E2ADA90D50087FDB8 /* Assets.xcassets */; };
 		F5A45E722ADA90D50087FDB8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5A45E702ADA90D50087FDB8 /* LaunchScreen.storyboard */; };
+		F5A45E7B2ADA91140087FDB8 /* BankDepartmentModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5A45E792ADA91140087FDB8 /* BankDepartmentModel.swift */; };
+		F5A45E7C2ADA91140087FDB8 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5A45E7A2ADA91140087FDB8 /* DetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		F5A45E6E2ADA90D50087FDB8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F5A45E712ADA90D50087FDB8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F5A45E732ADA90D50087FDB8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F5A45E792ADA91140087FDB8 /* BankDepartmentModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BankDepartmentModel.swift; sourceTree = "<group>"; };
+		F5A45E7A2ADA91140087FDB8 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +63,8 @@
 				F5A45E652ADA90D50087FDB8 /* AppDelegate.swift */,
 				F5A45E672ADA90D50087FDB8 /* SceneDelegate.swift */,
 				F5A45E692ADA90D50087FDB8 /* ViewController.swift */,
+				F5A45E792ADA91140087FDB8 /* BankDepartmentModel.swift */,
+				F5A45E7A2ADA91140087FDB8 /* DetailViewController.swift */,
 				F5A45E6B2ADA90D50087FDB8 /* Main.storyboard */,
 				F5A45E6E2ADA90D50087FDB8 /* Assets.xcassets */,
 				F5A45E702ADA90D50087FDB8 /* LaunchScreen.storyboard */,
@@ -139,6 +145,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				F5A45E6A2ADA90D50087FDB8 /* ViewController.swift in Sources */,
+				F5A45E7B2ADA91140087FDB8 /* BankDepartmentModel.swift in Sources */,
+				F5A45E7C2ADA91140087FDB8 /* DetailViewController.swift in Sources */,
 				F5A45E662ADA90D50087FDB8 /* AppDelegate.swift in Sources */,
 				F5A45E682ADA90D50087FDB8 /* SceneDelegate.swift in Sources */,
 			);
